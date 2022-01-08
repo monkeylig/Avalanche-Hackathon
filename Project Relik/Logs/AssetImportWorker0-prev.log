@@ -1,0 +1,634 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.24f1 (79c78de19888) revision 7980941'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'en' Physical Memory: 16339 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Users\jhard\Documents\Unity Engines\2020.3.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/jhard/Documents/Game-Projects/Project Relik
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+1031
+Successfully changed project path to: C:/Users/jhard/Documents/Game-Projects/Project Relik
+C:/Users/jhard/Documents/Game-Projects/Project Relik
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 71.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.24f1 (79c78de19888)
+[Subsystems] Discovering subsystems at path C:/Users/jhard/Documents/Unity Engines/2020.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jhard/Documents/Game-Projects/Project Relik/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   
+    VRAM:     8079 MB
+    Driver:   30.0.14.9709
+Initialize mono
+Mono path[0] = 'C:/Users/jhard/Documents/Unity Engines/2020.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/jhard/Documents/Unity Engines/2020.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/jhard/Documents/Unity Engines/2020.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/jhard/Documents/Unity Engines/2020.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001970 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 63.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.641 seconds
+Domain Reload Profiling:
+	ReloadAssembly (641ms)
+		BeginReloadAssembly (59ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (503ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (150ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (208ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (86ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005307 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 66.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.374 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1375ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1126ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (484ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (66ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3289 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.3 MB.
+System memory in use after: 139.5 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3722.
+Total: 3.631200 ms (FindLiveObjects: 0.329200 ms CreateObjectMapping: 0.193800 ms MarkObjects: 3.028300 ms  DeleteObjects: 0.079000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes
+  artifactKey: Guid(1cab788e3c8054d4a9d63188610d9ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(1cab788e3c8054d4a9d63188610d9ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70043dcd6bdfcc72c021c679f8955284') in 0.010319 seconds 
+  Import took 0.014750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.776756 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.006716 seconds 
+  Import took 0.011765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.356614 seconds.
+  path: Assets/Rendering
+  artifactKey: Guid(2b7ed95c2d58dda45850d8e9afb3cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rendering using Guid(2b7ed95c2d58dda45850d8e9afb3cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e54a8521abe57b16603d26fd769a6c') in 0.007234 seconds 
+  Import took 0.014956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.328012 seconds.
+  path: Assets/Config
+  artifactKey: Guid(2b7ed95c2d58dda45850d8e9afb3cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Config using Guid(2b7ed95c2d58dda45850d8e9afb3cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835f9f15897e243f17cf25f7cac6900a') in 0.009139 seconds 
+  Import took 0.014248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.224251 seconds.
+  path: Assets/Config/2D Renderer Data.asset
+  artifactKey: Guid(04350ef624f7ce446ba4f07d0ff23c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Config/2D Renderer Data.asset using Guid(04350ef624f7ce446ba4f07d0ff23c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bc2ec2270f84bb805131b6559fd6f8') in 0.081734 seconds 
+  Import took 0.088080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.570918 seconds.
+  path: Assets/Config/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(35e7bae0360e2654292a05c38dc58a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Config/UniversalRenderPipelineAsset_Renderer.asset using Guid(35e7bae0360e2654292a05c38dc58a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a781a03a2fb31f46e387abcd0f1b908b') in 0.030971 seconds 
+  Import took 0.036107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.499566 seconds.
+  path: Assets/Config/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(e5201b275e354714c89c66b36b0018ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Config/UniversalRenderPipelineAsset.asset using Guid(e5201b275e354714c89c66b36b0018ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1b73bf4bace2545e84cde9a02b3835') in 0.021782 seconds 
+  Import took 0.026973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.588138 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Data/PostProcessData.asset
+  artifactKey: Guid(41439944d30ece34e96484bdb6645b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Data/PostProcessData.asset using Guid(41439944d30ece34e96484bdb6645b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '949a8377c32539498ebe809e87dcad9a') in 0.019600 seconds 
+  Import took 0.028029 seconds .
+
+========================================================================
+Received Prepare
+Switching render pipeline 00000000000000000000000000000000 -> e5201b275e354714c89c66b36b0018ae
+Refreshing native plugins compatible for Editor in 4.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 64 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.3 MB.
+System memory in use after: 74.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3770.
+Total: 4.179700 ms (FindLiveObjects: 0.273800 ms CreateObjectMapping: 0.137900 ms MarkObjects: 3.745100 ms  DeleteObjects: 0.021800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005195 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.071 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1071ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (893ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (314ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (327ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.8 MB.
+System memory in use after: 137.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3795.
+Total: 3.076700 ms (FindLiveObjects: 0.290800 ms CreateObjectMapping: 0.167300 ms MarkObjects: 2.596600 ms  DeleteObjects: 0.020800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1629.111014 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Scripts
+  artifactKey: Guid(cbc6d53f2e8242c41a6c0b3077edf205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Scripts using Guid(cbc6d53f2e8242c41a6c0b3077edf205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9db9c3b8013c599c85a73097f45c119') in 0.009720 seconds 
+  Import took 0.014848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.669954 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_darkAthmosphere.unity
+  artifactKey: Guid(78582a19706894ba28b944f53d777307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_darkAthmosphere.unity using Guid(78582a19706894ba28b944f53d777307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86183c5e8726c93e69f35296d82d5dad') in 0.023128 seconds 
+  Import took 0.027988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.270901 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_desert.unity
+  artifactKey: Guid(ff47975411db6458abece58803d175eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_desert.unity using Guid(ff47975411db6458abece58803d175eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243421eeffe073780addc9191d27640b') in 0.006505 seconds 
+  Import took 0.011025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.901704 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_interior.unity
+  artifactKey: Guid(b7c459520a29f413ead089e8589ff8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_interior.unity using Guid(b7c459520a29f413ead089e8589ff8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9b5564ee100ab13ec226d44d2436a6') in 0.006172 seconds 
+  Import took 0.010669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.924794 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_playable.forest.unity
+  artifactKey: Guid(574638536f52c482d8992a5a75cb5348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Scenes/pixel_scene_playable.forest.unity using Guid(574638536f52c482d8992a5a75cb5348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ef5d3e33e78ffc3aff9cbc64264e50') in 0.006465 seconds 
+  Import took 0.011374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.940346 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Physics/phys_character.bottom.physicsMaterial2D
+  artifactKey: Guid(65e679685bd7d4f33859ca25ec69e456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Physics/phys_character.bottom.physicsMaterial2D using Guid(65e679685bd7d4f33859ca25ec69e456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a898dc98dcaf7f3729b2eea00d7c0b5') in 0.009405 seconds 
+  Import took 0.014240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.213666 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Physics/phys_character.top.physicsMaterial2D
+  artifactKey: Guid(dbaaf103cc1de42ca858484badf52d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Physics/phys_character.top.physicsMaterial2D using Guid(dbaaf103cc1de42ca858484badf52d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6737228f6ecdcb4ed0b40f4db8f1eb7') in 0.007317 seconds 
+  Import took 0.012314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.275214 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Physics/phys_ground.physicsMaterial2D
+  artifactKey: Guid(4f073125366a2475cadeb7b88325a910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Physics/phys_ground.physicsMaterial2D using Guid(4f073125366a2475cadeb7b88325a910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937440765a1a33c995ee79ef365887a3') in 0.006332 seconds 
+  Import took 0.010893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.148622 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Physics
+  artifactKey: Guid(3a3ca1e1e83ccbb4dbe07ce73e0c43d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Physics using Guid(3a3ca1e1e83ccbb4dbe07ce73e0c43d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75d646a0a4727883c5f82316f08e318') in 0.005813 seconds 
+  Import took 0.010573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.298753 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Ground/degrade.colorBurn.down.png
+  artifactKey: Guid(a87f71aa28e3e411bb615a4b1c03390a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Ground/degrade.colorBurn.down.png using Guid(a87f71aa28e3e411bb615a4b1c03390a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e46b740c08dee314b75d898101173f6') in 0.112742 seconds 
+  Import took 0.117603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.060074 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Prefabs/Brech.prefab
+  artifactKey: Guid(865cf463ab9a64bd2b2536f52eeec12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Prefabs/Brech.prefab using Guid(865cf463ab9a64bd2b2536f52eeec12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d89ad26d90c393b06fc2cdd0bc17dd5') in 0.017106 seconds 
+  Import took 0.022727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.285146 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Prefabs/babyBrech.prefab
+  artifactKey: Guid(8161aec430ce04e09ba942582129a95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Prefabs/babyBrech.prefab using Guid(8161aec430ce04e09ba942582129a95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770d7557777082efc4c2b5928c50ac11') in 0.009350 seconds 
+  Import took 0.014244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.473062 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Sample/Prefabs/klin.prefab
+  artifactKey: Guid(e88493437aa624c89a5a5c2446e78220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Sample/Prefabs/klin.prefab using Guid(e88493437aa624c89a5a5c2446e78220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ca7787b238739810b29f3ff774b0c9') in 0.013044 seconds 
+  Import took 0.018073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.467866 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters
+  artifactKey: Guid(20e6ce5a467ea824283a4ab95388e5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters using Guid(20e6ce5a467ea824283a4ab95388e5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4fba03087dfa47bdafbf765881fe7e7') in 0.006560 seconds 
+  Import took 0.011225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.765974 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.climb.anim
+  artifactKey: Guid(5da09fd9512c940eabeeb8ec23595214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.climb.anim using Guid(5da09fd9512c940eabeeb8ec23595214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90574c5839701bf7e97fbb6ed1da4d2') in 0.008056 seconds 
+  Import took 0.012796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.609477 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.controller
+  artifactKey: Guid(027a79dcd7f9e4c429c7a794e19d5c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.controller using Guid(027a79dcd7f9e4c429c7a794e19d5c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) '.' is not allowed in State name
+'.' is not allowed in State name
+'.' is not allowed in State name
+'.' is not allowed in State name
+'.' is not allowed in State name
+'.' is not allowed in State name
+'.' is not allowed in State name
+'.' is not allowed in State name
+'.' is not allowed in State name
+ -> (artifact id: '5c97f124bf5197dec22e69ccfe075f10') in 0.007864 seconds 
+  Import took 0.012750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.767007 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.crouch.anim
+  artifactKey: Guid(1090e642f34f745cda4663adf6dca209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.crouch.anim using Guid(1090e642f34f745cda4663adf6dca209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6c55106fc69790df58c297a9f3c908') in 0.006459 seconds 
+  Import took 0.011635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.925285 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.jump.up.anim
+  artifactKey: Guid(16218c1b0a1c34d9ebe47a72e007e01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.jump.up.anim using Guid(16218c1b0a1c34d9ebe47a72e007e01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888ed9fbb67c819ea05caf1d8151cd35') in 0.006483 seconds 
+  Import took 0.011331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.750995 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/atlas.klin1024x1024.png
+  artifactKey: Guid(6559706a389a74ab89f5661e4742fcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/atlas.klin1024x1024.png using Guid(6559706a389a74ab89f5661e4742fcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9a0c9d5ec5137e12fcd4dca8516fee') in 0.160482 seconds 
+  Import took 0.165438 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005352 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.053 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1053ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (875ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (296ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (326ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3246 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.1 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3807.
+Total: 3.070400 ms (FindLiveObjects: 0.267200 ms CreateObjectMapping: 0.147800 ms MarkObjects: 2.637500 ms  DeleteObjects: 0.016900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12.944963 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.jump.down.anim
+  artifactKey: Guid(658d119a9e4f4461cbb79cc7a8776b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.jump.down.anim using Guid(658d119a9e4f4461cbb79cc7a8776b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2e4d688467d26dbd7594a146ce0bb9') in 0.023299 seconds 
+  Import took 0.028094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.579784 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.look.up.anim
+  artifactKey: Guid(a5850aa1be5b94a6290b34cccec32e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.look.up.anim using Guid(a5850aa1be5b94a6290b34cccec32e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf8af211f1687713357afface51f2ca') in 0.006468 seconds 
+  Import took 0.011235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.476674 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.stand.anim
+  artifactKey: Guid(fbb4720edfd454f2cac305d9f86141c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Klin/klin.stand.anim using Guid(fbb4720edfd454f2cac305d9f86141c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c48f54317c106a5e05c892488e8a6bf') in 0.006977 seconds 
+  Import took 0.012434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.246193 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/babyBrech.walk50x50.psd
+  artifactKey: Guid(6d53bd35fe1bf41da96c619ce1c07736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/babyBrech.walk50x50.psd using Guid(6d53bd35fe1bf41da96c619ce1c07736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0df47ba0b24fd33cbfdd839cb68767') in 0.028688 seconds 
+  Import took 0.033564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.527918 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/babyBrech.stand.eat50x50.psd
+  artifactKey: Guid(e6ec6226169fe409a87a29b87fb5adb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/babyBrech.stand.eat50x50.psd using Guid(e6ec6226169fe409a87a29b87fb5adb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912c2aac12d80e79e4061a57edaaeef9') in 0.013668 seconds 
+  Import took 0.018332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.784513 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/BrechWalkcycle50x50.psd
+  artifactKey: Guid(4353a7a18b03c460b8d58ab0ad0d413e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/BrechWalkcycle50x50.psd using Guid(4353a7a18b03c460b8d58ab0ad0d413e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b0175bdce4f253a03d108117b241f6') in 0.011697 seconds 
+  Import took 0.016590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.684604 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/Klin Climb120x120.psd
+  artifactKey: Guid(f3a44cffda4324d38be94a45468dc3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/psd/Klin Climb120x120.psd using Guid(f3a44cffda4324d38be94a45468dc3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878855145ff1c686049f6098d1bc21c4') in 0.012515 seconds 
+  Import took 0.017207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.611730 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/psd
+  artifactKey: Guid(50bf14d55562b4f409a1697ddc537389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/psd using Guid(50bf14d55562b4f409a1697ddc537389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a9950590f98a3071be0263612fb2db') in 0.005872 seconds 
+  Import took 0.010544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.441155 seconds.
+  path: Assets/UniArt.PixelScifiLandscape/Content/Characters/Animals/atlas.animals512x512.png
+  artifactKey: Guid(32622f57758e948c989e16d813da9a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape/Content/Characters/Animals/atlas.animals512x512.png using Guid(32622f57758e948c989e16d813da9a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e1c9583a43285de0ab4f4765ae66ee5') in 0.113433 seconds 
+  Import took 0.118188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.917368 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f052346457356a94342001b609dcf24b') in 0.006406 seconds 
+  Import took 0.011096 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005262 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (880ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (294ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (332ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3223 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.7 MB.
+System memory in use after: 139.9 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3791.
+Total: 3.921000 ms (FindLiveObjects: 0.399900 ms CreateObjectMapping: 0.183700 ms MarkObjects: 3.304600 ms  DeleteObjects: 0.031600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 35.459016 seconds.
+  path: Assets/UniArt.PixelScifiLandscape
+  artifactKey: Guid(6bdc633de1bb33048a24ce265df41503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniArt.PixelScifiLandscape using Guid(6bdc633de1bb33048a24ce265df41503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950a172b6d8fe420637452605f3df4be') in 0.009399 seconds 
+  Import took 0.014076 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
