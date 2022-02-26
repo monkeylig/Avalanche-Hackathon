@@ -1,5 +1,5 @@
 {
-    "name": "New Controls",
+    "name": "Character Controls",
     "maps": [
         {
             "name": "Player",
@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Combat",
+                    "name": "Aim",
                     "type": "Value",
                     "id": "52476ce0-636a-4b91-9653-1031197adca3",
                     "expectedControlType": "Vector2",
@@ -96,7 +96,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Combat",
+                    "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

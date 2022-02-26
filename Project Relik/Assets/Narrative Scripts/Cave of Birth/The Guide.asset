@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: The Guide
   m_EditorClassIdentifier: 
   lines:
-  - 
   - Hello...
   - Glad to see you're alive
   - I'll be your sheperd through this unforgiving void.

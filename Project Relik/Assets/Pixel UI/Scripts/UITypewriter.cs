@@ -37,6 +37,9 @@ namespace PixelsoftGames.PixelUI
         [SerializeField]
         [Tooltip("A special color to make the last typed character for an added visual effect")]
         private Color highlightColor;
+        [SerializeField]
+        [Tooltip("How many characters can be be on one line. 0 means unlimited.")]
+        private int characterLineLimit = 0;
         [Tooltip("The event that gets called when the typewriter finishes writing.")]
         public UnityEvent OnComplete;
         [Tooltip("The event that gets called when the typewriter has finished and the user clicks (to progress).")]
@@ -51,6 +54,18 @@ namespace PixelsoftGames.PixelUI
         // The typewriter coroutine reference in case we need to kill it
         private Coroutine typewriter = null;
 
+        private TextMeshPro Label
+        {
+            get
+            {
+                if (!label)
+                {
+                    label = GetComponent<TextMeshPro>();
+                }
+
+                return label;
+            }
+        }
         #endregion
 
         #region Monobehaviour Callbacks
@@ -108,7 +123,7 @@ namespace PixelsoftGames.PixelUI
             if (typewriter != null)
                 StopCoroutine(typewriter);
 
-            label.text = string.Empty;
+            Label.text = string.Empty;
             s1 = text;
             typewriter = StartCoroutine(Typewriter());
         }
@@ -167,12 +182,27 @@ namespace PixelsoftGames.PixelUI
             s2 = string.Empty;
             string colorString = ColorUtility.ToHtmlStringRGBA(highlightColor);
 
+            int charlineCount = 0;
+            int lastWhiteSpaceIndex = 0;
             while (index < s1.Length)
             {
+                if (charlineCount >= characterLineLimit && lastWhiteSpaceIndex > 0 && s2[lastWhiteSpaceIndex] != '\n')
+                {
+                    s2 = s2.Insert(lastWhiteSpaceIndex, "\n");
+                    charlineCount = 0;
+                }
+
                 label.text = s2;
                 label.text += "<color=#" + colorString + ">" + s1[index] + "</color>";
                 s2 += s1[index];
+                if (s1[index] == ' ')
+                {
+                    lastWhiteSpaceIndex = s2.Length - 1;
+                }
+
                 index++;
+                charlineCount++;
+
 
                 if (bypassTimeScale)
                     yield return WaitForRealSeconds(60.0f / TypeDelay);
@@ -180,7 +210,7 @@ namespace PixelsoftGames.PixelUI
                     yield return new WaitForSeconds(60.0f / TypeDelay);
             }
 
-            label.text = s1;
+            label.text = s2;
 
             if (repeat)
                 SetText(label.text);
