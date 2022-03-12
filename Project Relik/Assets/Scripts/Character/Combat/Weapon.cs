@@ -8,8 +8,10 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private VisualEffect swordImpact = null;
 
+    private bool floating = false;
     private float weaponAngle;
     private CharacterCombat characterCombat = null;
+    private Animator animator = null;
 
     public float WeaponAngle
     {
@@ -21,9 +23,24 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    public bool Float
+    {
+        get { return floating; }
+        set
+        {
+            floating = value;
+
+            if (animator)
+            {
+                animator.SetBool("floating", floating);
+            }
+        }
+    }
+
     private void Awake()
     {
         characterCombat = GetComponent<CharacterCombat>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnDestroy()

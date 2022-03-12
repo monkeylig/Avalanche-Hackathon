@@ -11,29 +11,33 @@ public class DialogueWriter : MonoBehaviour
     [SerializeField]
     private DialogueScript script = null;
     [SerializeField]
-    private int dialogueLine = 0;
-    [SerializeField]
-    private MeshRenderer mesh = null;
+    private MeshRenderer textMeshRenderer = null;
   
     private SpriteRenderer dialogueBubble = null;
     private int currentLine = -1;
     private float maxWidth = 0;
     private float maxHeight = 0;
 
-    // Start is called before the first frame update
-    void Start()
+    private SpriteRenderer DialogueBubble
     {
-        dialogueBubble = GetComponent<SpriteRenderer>();
+        get
+        {
+            if (!dialogueBubble)
+            {
+                dialogueBubble = GetComponent<SpriteRenderer>();
+            }
+            return dialogueBubble;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.rotation = Quaternion.identity;
-        if (typewriter && dialogueBubble)
+        if (typewriter && DialogueBubble)
         {
             var textMesh = typewriter.GetComponent<RectTransform>();
-            var bounds = mesh.bounds;
+            var bounds = textMeshRenderer.bounds;
             if (bounds.size.x > maxWidth || bounds.size.y > maxHeight)
             {
                 if (bounds.size.x > maxWidth) { maxWidth = bounds.size.x; }
@@ -92,7 +96,7 @@ public class DialogueWriter : MonoBehaviour
             return;
         }
 
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeSelf && DialogueBubble)
         {
             gameObject.SetActive(true);
             dialogueBubble.size = new Vector2(0, 0);

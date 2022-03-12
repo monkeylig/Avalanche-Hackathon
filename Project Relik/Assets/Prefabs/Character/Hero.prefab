@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6868056457413775247}
   - component: {fileID: 7632354008541714598}
+  - component: {fileID: 8613918682221108402}
   m_Layer: 0
   m_Name: Ground Checker
   m_TagString: Untagged
@@ -87,6 +88,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1987927, y: 0.03883463}
   m_EdgeRadius: 0
+--- !u!114 &8613918682221108402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188955320513723682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e1a823a5cfb4478a67c44a1a8e73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8947238108264866585
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,6 +116,7 @@ GameObject:
   - component: {fileID: 8947238108264866584}
   - component: {fileID: 8947238108264866577}
   - component: {fileID: 7328395780320633329}
+  - component: {fileID: 8531730004552904522}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -252,6 +266,7 @@ MonoBehaviour:
   groundDrag: 20
   arialDrag: 0
   groundTrigger: {fileID: 7632354008541714598}
+  freezeDirection: 0
 --- !u!114 &8947238108264866577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,3 +295,18 @@ MonoBehaviour:
   weapon: {fileID: 0}
   focusPoint: {fileID: 1960153811640423028}
   canAttack: 1
+--- !u!114 &8531730004552904522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8947238108264866585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6805b23b26a7da468add67405b7cf56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combatTeam: 1
+  health: 100
+  isInvinsible: 0

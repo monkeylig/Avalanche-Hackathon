@@ -20,7 +20,7 @@ public class CharacterInput : MonoBehaviour
         controls.Player.Movement.canceled += HandleMovement;
         controls.Player.Attack.performed += HandleAttack;
         controls.Player.Aim.performed += HandleAim;
-
+        
         character = GetComponent<CharacterMovement>();
         swordWielder = GetComponent<SwordWielder>();
         characterCombat = GetComponent<CharacterCombat>();
