@@ -20,6 +20,10 @@ public class CharacterCombat : MonoBehaviour
     private Collider2D[] impactTargets = null;
     private Attack currentAttack = null;
 
+
+    public bool AttackReady
+    { get { return attackReady; } }
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -72,7 +76,6 @@ public class CharacterCombat : MonoBehaviour
 
             if (target && target.gameObject != gameObject && !target.IsImmune(gameObject) && currentAttack != null)
             {
-                target.TakeDamage(currentAttack.Damage);
                 Vector3 pushVector = impactTarget.bounds.center - pushCenter.position;
 
                 var pushVector2D = new Vector2(Mathf.Round(pushVector.x), Mathf.Round(pushVector.y));
@@ -83,8 +86,9 @@ public class CharacterCombat : MonoBehaviour
                     impactEffect.visualEffectAsset = currentAttack.DamageEffect;
                     impactEffect.transform.parent = null;
                     impactEffect.transform.position = impactTarget.bounds.center;
-                    impactEffect.Play();
                 }
+
+                target.TakeDamage(currentAttack.Damage, impactEffect);
             }
         }
     }

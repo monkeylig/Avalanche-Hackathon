@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: ShotGun
   m_EditorClassIdentifier: 
   damage: 1
-  pushForce: 50
+  pushForce: 10
   coolDown: 1
+  damageEffectAsset: {fileID: 0}
+  contactEffectAsset: {fileID: 0}

@@ -50,3 +50,9 @@ TagManager:
   - name: Active Objects 1
     uniqueID: 2223299237
     locked: 0
+  - name: Front Tiles
+    uniqueID: 153710135
+    locked: 0
+  - name: Front VFX
+    uniqueID: 3173881901
+    locked: 0

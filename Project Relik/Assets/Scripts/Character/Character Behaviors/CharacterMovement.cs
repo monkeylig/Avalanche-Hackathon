@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
 {
+    private static readonly float JumpTime = 0.2f;
     public enum Direction { Left = 1, Right = 2, Down = 3, Up = 4, None = 0 }
 
     [SerializeField]
@@ -13,6 +14,8 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
     private float arialMovementSpeed = 0;
     [SerializeField]
     private float maxSpeed = 0;
+    [SerializeField]
+    private float maxAirSpeed = 20;
     [SerializeField]
     private float jumpForce = 0;
     [SerializeField]
@@ -32,10 +35,16 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
     private Direction faceDirection;
     private bool isOnGround = true;
     private bool isJumping = false;
+    private float jumpTimer = 0;
 
     public Direction HorizontalMovement
     {
         get { return horizontalMovement; }
+    }
+
+    public Direction CurrentDirection
+    {
+        get { return faceDirection; }
     }
 
     public bool IsOnGround
@@ -73,9 +82,9 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
 
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed), rb2d.velocity.y);
+        rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rb2d.velocity.y, -maxAirSpeed, maxAirSpeed));
     }
 
     private void FixedUpdate()
@@ -108,10 +117,15 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
             rb2d.AddForce(new Vector2(-movementSpeed * Time.deltaTime, 0), ForceMode2D.Impulse);
         }
 
-        if (isOnGround && isJumping)
+        if (jumpTimer >= JumpTime)
         {
+            StopJump();
+        }
+
+        if (/*isOnGround &&*/ isJumping)
+        {
+            jumpTimer += Time.deltaTime;
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
-            isJumping = false;
         }
 
         if (isOnGround)
@@ -122,6 +136,7 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
         {
             rb2d.drag = arialDrag;
         }
+
     }
 
     public void Run(Direction direction)
@@ -148,6 +163,24 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
         }
     }
 
+    public void FaceDirection(Direction direction)
+    {
+        Run(direction);
+        Idle();
+    }
+
+    public void ToggleDirection()
+    {
+        if (faceDirection == Direction.Left)
+        {
+            FaceDirection(Direction.Right);
+        }
+        else if (faceDirection == Direction.Right)
+        {
+            FaceDirection(Direction.Left);
+        }
+    }
+
     public void Idle()
     {
         Run(Direction.None);
@@ -159,6 +192,12 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
         {
             isJumping = true;
         }
+    }
+
+    public void StopJump()
+    {
+        isJumping = false;
+        jumpTimer = 0;
     }
 
     public void TriggerEnter2D(Collider2D childCollider, Collider2D collider)

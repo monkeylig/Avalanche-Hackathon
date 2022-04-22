@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Killable : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Killable : MonoBehaviour
     private float health = 3;
     [SerializeField]
     private bool isInvinsible = false;
+    [SerializeField]
+    private bool superArmorActive = false;
 
     private Animator animator = null;
     private new Rigidbody2D rigidbody = null;
@@ -43,7 +46,7 @@ public class Killable : MonoBehaviour
         Debug.Log(pushDirection * pushForce);
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, VisualEffect impactEffect = null)
     {
         if (isInvinsible)
         {
@@ -52,11 +55,16 @@ public class Killable : MonoBehaviour
 
         health -= damage;
 
+        if (impactEffect != null)
+        {
+            impactEffect.Play();
+        }
+
         if (health <= 0)
         {
             animator.SetTrigger("Death");
         }
-        else
+        else if(!superArmorActive)
         {
             animator.SetTrigger("Hurt");
         }

@@ -259,12 +259,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77c8e640d77e35449c19735ec3bba49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundMovementSpeed: 150
-  arialMovementSpeed: 20
-  maxSpeed: 10
-  jumpForce: 30
+  groundMovementSpeed: 100
+  arialMovementSpeed: 10
+  maxSpeed: 30
+  maxAirSpeed: 30
+  jumpForce: 15
   groundDrag: 20
-  arialDrag: 0
+  arialDrag: 1
   groundTrigger: {fileID: 7632354008541714598}
   freezeDirection: 0
 --- !u!114 &8947238108264866577
@@ -310,3 +311,4 @@ MonoBehaviour:
   combatTeam: 1
   health: 100
   isInvinsible: 0
+  superArmorActive: 0

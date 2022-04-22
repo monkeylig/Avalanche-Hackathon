@@ -65,6 +65,10 @@ public class CharacterInput : MonoBehaviour
         {
             character.Jump();
         }
+        else if (inputVector.y <= 0.1f && inputVector.y > -0.1f)
+        {
+            character.StopJump();
+        }
     }
 
     private void HandleAttack(InputAction.CallbackContext context)
