@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-./Project Relik/[Ll]ibrary/
-./Project Relik/[Tt]emp/
-./Project Relik/[Oo]bj/
-./Project Relik/[Bb]uild/
-./Project Relik/[Bb]uilds/
-./Project Relik/[Ll]ogs/
-./Project Relik/[Uu]ser[Ss]ettings/
+/Project Relik/[Ll]ibrary/
+/Project Relik/[Tt]emp/
+/Project Relik/[Oo]bj/
+/Project Relik/[Bb]uild/
+/Project Relik/[Bb]uilds/
+/Project Relik/[Ll]ogs/
+/Project Relik/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
