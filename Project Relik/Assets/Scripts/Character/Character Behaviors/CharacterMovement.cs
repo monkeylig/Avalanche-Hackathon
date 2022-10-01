@@ -108,13 +108,18 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
             animator.SetBool("IsRunning", false);
         }
 
-        if (horizontalMovement == Direction.Right)
+        if (!freezeDirection)
         {
-            rb2d.AddForce(new Vector2(movementSpeed * Time.deltaTime, 0), ForceMode2D.Impulse);
-        }
-        else if (horizontalMovement == Direction.Left)
-        {
-            rb2d.AddForce(new Vector2(-movementSpeed * Time.deltaTime, 0), ForceMode2D.Impulse);
+            if (horizontalMovement == Direction.Right)
+            {
+                rb2d.AddForce(new Vector2(movementSpeed * Time.deltaTime, 0), ForceMode2D.Impulse);
+            }
+            else if (horizontalMovement == Direction.Left)
+            {
+                rb2d.AddForce(new Vector2(-movementSpeed * Time.deltaTime, 0), ForceMode2D.Impulse);
+            }
+
+            UpdateRotation();
         }
 
         if (jumpTimer >= JumpTime)
@@ -139,27 +144,36 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
 
     }
 
+    private void UpdateRotation()
+    {
+        Vector3 rotation = rb2d.transform.localRotation.eulerAngles;
+        if (faceDirection != DetectFaceDirection())
+        {
+            rb2d.transform.Rotate(0f, 180f, 0f);
+        }
+    }
+
     public void Run(Direction direction)
     {
+        horizontalMovement = direction;
+        if (horizontalMovement == Direction.Right)
+        {
+            if (faceDirection == Direction.Left)
+            {
+                faceDirection = Direction.Right;
+            }
+        }
+        else if (horizontalMovement == Direction.Left)
+        {
+            if (faceDirection == Direction.Right)
+            {
+                faceDirection = Direction.Left;
+            }
+        }
+
         if (!freezeDirection)
         {
-            horizontalMovement = direction;
-            if (horizontalMovement == Direction.Right)
-            {
-                if (faceDirection == Direction.Left && !freezeDirection)
-                {
-                    rb2d.transform.Rotate(0f, 180f, 0f);
-                    faceDirection = Direction.Right;
-                }
-            }
-            else if (horizontalMovement == Direction.Left)
-            {
-                if (faceDirection == Direction.Right && !freezeDirection)
-                {
-                    rb2d.transform.Rotate(0f, 180f, 0f);
-                    faceDirection = Direction.Left;
-                }
-            }
+            UpdateRotation();
         }
     }
 
@@ -167,6 +181,34 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
     {
         Run(direction);
         Idle();
+    }
+
+    public Direction DetectFaceDirection()
+    {
+        Vector3 rotation = rb2d.transform.localRotation.eulerAngles;
+
+        float y = rotation.y;
+
+        while (y > 360f)
+        {
+            y -= 360f;
+        }
+
+        while (y < 0)
+        {
+            y += 360;
+        }
+
+        if (y < 90f || y > 270f)
+        {
+            return Direction.Right;
+        }
+        else if (y >= 90f && y <= 270f)
+        {
+            return Direction.Left;
+        }
+
+        return Direction.Right;
     }
 
     public void ToggleDirection()
@@ -183,7 +225,7 @@ public class CharacterMovement : MonoBehaviour, ICollisionEventTarget
 
     public void Idle()
     {
-        Run(Direction.None);
+        horizontalMovement = Direction.None;
     }
 
     public void Jump()

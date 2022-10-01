@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using UnityEngine.Events;
 
 public class Killable : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Killable : MonoBehaviour
     private bool isInvinsible = false;
     [SerializeField]
     private bool superArmorActive = false;
+    [SerializeField]
+    private UnityEvent m_MyEvent;
 
     private Animator animator = null;
     private new Rigidbody2D rigidbody = null;

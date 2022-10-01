@@ -11,7 +11,9 @@ public class CharacterInput : MonoBehaviour
     private CharacterMovement character;
     private SwordWielder swordWielder;
     private CharacterCombat characterCombat;
+    private MagicUser magicUser;
     private Vector2 mousePos;
+    private CharacterMovement.Direction currentDirection = Direction.None;
 
     private void Awake()
     {
@@ -20,10 +22,13 @@ public class CharacterInput : MonoBehaviour
         controls.Player.Movement.canceled += HandleMovement;
         controls.Player.Attack.performed += HandleAttack;
         controls.Player.Aim.performed += HandleAim;
-        
+        controls.Player.SonicButton.performed += FocusSonic;
+        controls.Player.SonicButton.canceled += CastSonic;
+
         character = GetComponent<CharacterMovement>();
         swordWielder = GetComponent<SwordWielder>();
         characterCombat = GetComponent<CharacterCombat>();
+        magicUser = GetComponent<MagicUser>();
 
     }
 
@@ -43,6 +48,7 @@ public class CharacterInput : MonoBehaviour
         {
             swordWielder.AimWeapon(mousePos);
         }
+        character.Run(currentDirection);
     }
 
     private void HandleMovement(InputAction.CallbackContext context)
@@ -50,15 +56,18 @@ public class CharacterInput : MonoBehaviour
         Vector2 inputVector = context.ReadValue<Vector2>();
         if (inputVector.x > 0.1f)
         {
-            character.Run(Direction.Right);
+            currentDirection = Direction.Right;
+            //character.Run();
         }
         else if (inputVector.x < -0.1f)
         {
-            character.Run(Direction.Left);
+            currentDirection = Direction.Left;
+            //character.Run(Direction.Left);
         }
         else
         {
-            character.Run(Direction.None);
+            currentDirection = Direction.None;
+            //character.Run(Direction.None);
         }
 
         if (inputVector.y > 0.1f)
@@ -87,5 +96,25 @@ public class CharacterInput : MonoBehaviour
     private void HandleAim(InputAction.CallbackContext context)
     {
         mousePos = context.ReadValue<Vector2>();
+    }
+
+    private void FocusSonic(InputAction.CallbackContext context)
+    {
+        if (magicUser == null)
+        {
+            return;
+        }
+
+        magicUser.FocusSpell(0);
+    }
+
+    private void CastSonic(InputAction.CallbackContext context)
+    {
+        if (magicUser == null)
+        {
+            return;
+        }
+
+        magicUser.CastMagic();
     }
 }
